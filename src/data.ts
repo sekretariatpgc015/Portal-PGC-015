@@ -221,12 +221,12 @@ export const SERVICE_ITEMS: ServiceItem[] = [
 export const NEWS_ITEMS: NewsItem[] = [
   {
     id: '1',
-    title: 'Pengecoran Jembatan & Normalisasi Saluran',
+    title: 'Perbaikan Gorong-gorong',
     date: '30 Juni 2026',
     tag: 'Pembangunan',
-    image: '/src/assets/images/drainage_repair_1780393395281.png',
-    description: 'Kegiatan swadaya warga RW 015 untuk mengecor jembatan penghubung plat duiker sela-sela jalan serta menormalisasi saluran air/pembuangan luar.',
-    content: 'Sebagai komitmen peningkatan infrastruktur lingkungan dan pencegahan banjir, warga RW 015 Desa Wanajaya melangsungkan kegiatan gotong-royong swadaya. Fokus utama mencakup pengecoran jembatan penghubung (plat duiker) menggunakan tulangan besi beton cor, serta pengerukan endapan lumpur (normalisasi pembuangan) untuk memaksimalkan kapasitas aliran debit air saat hujan lebat.'
+    image: 'https://lh3.googleusercontent.com/u/0/d/1fxON5oxodvuljZyc9ehclXnPcCXDS-SA',
+    description: 'Kegiatan gotong-royong warga rukun warga 015 untuk perbaikan fasilitas gorong-gorong saluran pembuangan air secara swadaya.',
+    content: 'Sebagai salah satu langkah antisipasi banjir dan penyumbatan aliran air, warga beserta jajaran pengurus RT dan RW melaksanakan perbaikan gorong-gorong secara intensif. Pembenahan saluran gorong-gorong ini dilakukan menggunakan dana swadaya internal serta dukungan gotong-royong warga sekitar demi menciptakan lingkungan yang lebih bersih, sehat, dan bebas dari luapan air saat musim penghujan.'
   },
   {
     id: '2',
@@ -278,11 +278,11 @@ export const NEWS_ITEMS: NewsItem[] = [
 export const ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'p5',
-    title: 'Pengecoran Jembatan & Normalisasi Saluran',
+    title: 'Perbaikan Gorong-gorong',
     date: '30 Juni 2026',
-    time: 'Selama Pengerjaan Berlangsung',
+    time: 'Selama Perbaikan Berlangsung',
     location: 'Sekretariat RW 015 & Jl. Cempaka II',
-    description: 'Sehubungan dengan adanya kegiatan pembangunan jembatan plat duiker dan normalisasi saluran air, diberitahukan bahwa akan dilakukan penutupan jalan sementara di depan Sekretariat RW 015 dan jalur arah Jl. Cempaka II dari tanggal 30 Juni 2026 s/d 6 Juli 2026.\n\nAkses jalan utama dialihkan melalui SUTET (PORTAL RT. 001) DAN PORTAL RT. 004.\n\nMohon maaf atas ketidaknyamanan yang ditimbulkan bagi segenap warga dan pengguna jalan. Terima kasih atas pengertian dan kerja samanya.',
+    description: 'Sehubungan dengan adanya perbaikan gorong-gorong, diberitahukan bahwa akan dilakukan penutupan jalan sementara di depan Sekretariat RW 015 dan jalur arah Jl. Cempaka II dari tanggal 30 Juni 2026 s/d 6 Juli 2026.\n\nAkses jalan utama dialihkan melalui SUTET (PORTAL RT. 001) DAN PORTAL RT. 004.\n\nMohon maaf atas ketidaknyamanan yang ditimbulkan bagi segenap warga dan pengguna jalan. Terima kasih atas pengertian dan kerja samanya.',
     category: 'Keamanan'
   },
   {
@@ -322,10 +322,10 @@ export const ANNOUNCEMENTS: Announcement[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'g1',
-    title: 'Giat Kerja Bakti RT 004',
+    title: 'Perbaikan Gorong-gorong',
     category: 'Kegiatan',
-    image: 'https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=600&auto=format&fit=crop&q=80',
-    description: 'Warga RT 004 bergotong-royong membersihkan gorong-gorong penyumbatan air.'
+    image: 'https://lh3.googleusercontent.com/u/0/d/1aARj0SyeQlCZgWybBMNLu-LMDhIsX3eF',
+    description: 'Kegiatan gotong-royong warga rukun warga 015 untuk perbaikan fasilitas gorong-gorong saluran pembuangan air secara swadaya.'
   },
   {
     id: 'g2',
