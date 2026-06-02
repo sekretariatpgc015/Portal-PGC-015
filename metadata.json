@@ -1,0 +1,6 @@
+{
+  "name": "Portal Warga RW 015 Pesona Gading Cibitung",
+  "description": "Portal web interaktif RW 015 Desa Wanajaya, Kecamatan Cibitung dengan profil, daftar kepengurusan, layanan surat warga, berita, pengumuman, galeri kegiatan, dan formulir kontak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
