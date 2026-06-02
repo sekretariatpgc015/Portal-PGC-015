@@ -222,7 +222,7 @@ export const NEWS_ITEMS: NewsItem[] = [
   {
     id: '1',
     title: 'Perbaikan Gorong-gorong',
-    date: '30 Juni 2026',
+    date: '30 Mei 2026',
     tag: 'Pembangunan',
     image: 'https://lh3.googleusercontent.com/u/0/d/1fxON5oxodvuljZyc9ehclXnPcCXDS-SA',
     description: 'Kegiatan gotong-royong warga rukun warga 015 untuk perbaikan fasilitas gorong-gorong saluran pembuangan air secara swadaya.',
@@ -279,10 +279,10 @@ export const ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'p5',
     title: 'Perbaikan Gorong-gorong',
-    date: '30 Juni 2026',
+    date: '30 Mei 2026',
     time: 'Selama Perbaikan Berlangsung',
     location: 'Sekretariat RW 015 & Jl. Cempaka II',
-    description: 'Sehubungan dengan adanya perbaikan gorong-gorong, diberitahukan bahwa akan dilakukan penutupan jalan sementara di depan Sekretariat RW 015 dan jalur arah Jl. Cempaka II dari tanggal 30 Juni 2026 s/d 6 Juli 2026.\n\nAkses jalan utama dialihkan melalui SUTET (PORTAL RT. 001) DAN PORTAL RT. 004.\n\nMohon maaf atas ketidaknyamanan yang ditimbulkan bagi segenap warga dan pengguna jalan. Terima kasih atas pengertian dan kerja samanya.',
+    description: 'Sehubungan dengan adanya perbaikan gorong-gorong, diberitahukan bahwa akan dilakukan penutupan jalan sementara di depan Sekretariat RW 015 dan jalur arah Jl. Cempaka II dari tanggal 30 Mei 2026 s/d 5 Juni 2026.\n\nAkses jalan utama dialihkan melalui SUTET (PORTAL RT. 001) DAN PORTAL RT. 004.\n\nMohon maaf atas ketidaknyamanan yang ditimbulkan bagi segenap warga dan pengguna jalan. Terima kasih atas pengertian dan kerja samanya.',
     category: 'Keamanan'
   },
   {

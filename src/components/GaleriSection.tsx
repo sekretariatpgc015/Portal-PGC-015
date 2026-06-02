@@ -1,5 +1,5 @@
 import { useState, MouseEvent } from 'react';
-import { Eye, ChevronLeft, ChevronRight, X, Calendar, MapPin, Layers } from 'lucide-react';
+import { Eye, ChevronLeft, ChevronRight, X, Calendar, MapPin } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data';
 import { getGoogleDriveImageUrl } from '../utils/googleDrive';
 import { GalleryItem } from '../types';
@@ -49,17 +49,11 @@ function GalleryCard({ item, onView }: GalleryCardProps) {
         </div>
       </div>
 
-      {/* Float category & count tag */}
+      {/* Float category tag */}
       <div className="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-        <span className="text-xxs font-black uppercase text-white bg-blue-600 px-2.5 py-1 rounded-md tracking-wider">
+        <span className="text-sm font-black uppercase text-white bg-blue-600 px-2.5 py-1 rounded-md tracking-wider">
           {item.category}
         </span>
-        {hasSubImages && (
-          <span className="text-xxs font-black uppercase text-white bg-slate-900/85 backdrop-blur-xs px-2 py-1 rounded-md tracking-wider flex items-center gap-1">
-            <Layers className="h-3 w-3 text-blue-400" />
-            {item.images!.length} Foto
-          </span>
-        )}
       </div>
 
       {/* Slide Navigation inside card */}
@@ -306,7 +300,7 @@ export default function GaleriSection() {
             <div className="flex justify-center items-center gap-6 text-[10px] text-slate-400 pt-3">
               <span className="flex items-center gap-1">
                 <Calendar className="h-3.5 w-3.5 text-blue-400" />
-                30 Juni 2026
+                30 Mei 2026
               </span>
               <span className="flex items-center gap-1">
                 <MapPin className="h-3.5 w-3.5 text-blue-400" />

@@ -120,7 +120,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           </div>
 
           {/* Desktop Navigation */}
-          <nav id="desktop-nav-links" className="hidden lg:flex items-center space-x-1 bg-slate-100/60 p-1.5 rounded-2xl border border-slate-250/30">
+          <nav id="desktop-nav-links" className="hidden lg:flex items-center space-x-1 bg-slate-100/60 p-1.5 rounded-2xl border-0">
             {menuItems.map((item) => {
               const isActive = activeTab === item.id || (item.id === 'berita' && activeTab === 'pengumuman');
               return (
