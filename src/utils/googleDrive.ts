@@ -5,45 +5,39 @@
 export function getGoogleDriveImageUrl(url: string | null | undefined): string {
   if (!url) return '';
 
-  // If it's already a direct thumbnail or googleusercontent link, keep it as is
-  if (url.includes('drive.google.com/thumbnail') || url.includes('lh3.googleusercontent.com/d/')) {
+  // If it's already an Unsplash image, return as is
+  if (url.includes('unsplash.com')) {
     return url;
   }
 
   let fileId = '';
 
   try {
-    if (url.includes('drive.google.com') || url.includes('docs.google.com')) {
-      // 1. Match paths like /file/d/ID/view or /file/d/ID
-      const fileDMatch = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
-      if (fileDMatch && fileDMatch[1]) {
-        fileId = fileDMatch[1];
-      } else {
-        // 2. Try matching query parameter 'id' for open/uc urls
-        const urlObj = new URL(url);
-        const idParam = urlObj.searchParams.get('id');
-        if (idParam) {
-          fileId = idParam;
-        }
+    if (url.includes('id=')) {
+      const idMatch = url.match(/[?&]id=([a-zA-Z0-9_-]{28,100})/);
+      if (idMatch && idMatch[1]) {
+        fileId = idMatch[1];
       }
-    } else {
-      // Maybe some fallback pattern search for file ID inside non-standard links
-      const dMatch = url.match(/\/d\/([a-zA-Z0-9_-]{28,50})/);
+    }
+
+    if (!fileId) {
+      // Matches both lh3.googleusercontent.com/u/0/d/... and drive.google.com/file/d/...
+      const dMatch = url.match(/\/d\/([a-zA-Z0-9_-]{28,100})/);
       if (dMatch && dMatch[1]) {
         fileId = dMatch[1];
       }
     }
   } catch (e) {
-    // URL parsing fallback
-    const fileDMatch = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
-    if (fileDMatch && fileDMatch[1]) {
-      fileId = fileDMatch[1];
+    // Fallback parsing
+    const dMatch = url.match(/\/d\/([a-zA-Z0-9_-]{28,100})/);
+    if (dMatch && dMatch[1]) {
+      fileId = dMatch[1];
     }
   }
 
-  // If we successfully extracted a file ID, return the formatted thumbnail URL
   if (fileId) {
-    return `https://drive.google.com/thumbnail?id=${fileId}`;
+    // Return high-resolution web-optimized Google Drive output (w1000) for crystal clear display
+    return `https://lh3.googleusercontent.com/u/0/d/${fileId}=w1000`;
   }
 
   return url;

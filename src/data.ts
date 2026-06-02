@@ -324,8 +324,40 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g1',
     title: 'Perbaikan Gorong-gorong',
     category: 'Kegiatan',
-    image: 'https://lh3.googleusercontent.com/u/0/d/1aARj0SyeQlCZgWybBMNLu-LMDhIsX3eF',
-    description: 'Kegiatan gotong-royong warga rukun warga 015 untuk perbaikan fasilitas gorong-gorong saluran pembuangan air secara swadaya.'
+    image: 'https://lh3.googleusercontent.com/u/0/d/1fxON5oxodvuljZyc9ehclXnPcCXDS-SA',
+    description: 'Dokumentasi lengkap rangkaian kegiatan gotong-royong swadaya warga RW 015 dalam membenahi fasilitas gorong-gorong saluran pembuangan air.',
+    images: [
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/1fxON5oxodvuljZyc9ehclXnPcCXDS-SA',
+        title: 'Survei Awal Area Genangan',
+        description: 'Survei awal kondisi jalan dan saluran pembuangan air di sekitar RW 015 sebelum pengerjaan perbaikan dimulai.'
+      },
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/17Ws771K_Acuf0bLXBSOwPyYXRsWY5svE',
+        title: 'Proses Pengerukan Manual',
+        description: 'Penggalian dan pengerukan lumpur secara intensif untuk memperdalam aliran pembuangan air.'
+      },
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/1-GclKDEyvGjTFHKXQY48RoR8FNSOswYh',
+        title: 'Kedatangan U-Ditch Beton',
+        description: 'Pengiriman beton pracetak U-Ditch menggunakan armada truk pengangkut ke lokasi pembangunan.'
+      },
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/1aARj0SyeQlCZgWybBMNLu-LMDhIsX3eF',
+        title: 'Pemasangan U-Ditch Presisi',
+        description: 'Proses relokasi dan peletakan boks beton U-Ditch secara presisi menggunakan bantuan derek crane.'
+      },
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/1bICy2sW1lZUIJJaQhjCE5o0vb8Wy4Uf9',
+        title: 'Pembesian Plat Duiker',
+        description: 'Pemasangan anyaman besi beton sebagai tulangan struktur jembatan penutup gorong-gorong.'
+      },
+      {
+        image: 'https://lh3.googleusercontent.com/u/0/d/1XacQ5iBiWDrvIxTXeYy-0ZMTlAB6jRoN',
+        title: 'Hasil Akhir Pengecoran',
+        description: 'Tahapan penyelesaian akhir pengecoran jalan beton di atas gorong-gorong baru, siap diakses warga.'
+      }
+    ]
   },
   {
     id: 'g2',

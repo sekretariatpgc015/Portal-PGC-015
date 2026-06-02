@@ -47,6 +47,11 @@ export interface GalleryItem {
   category: 'Kegiatan' | 'Sosial' | 'Keagamaan' | 'Lainnya';
   image: string;
   description: string;
+  images?: {
+    image: string;
+    title: string;
+    description: string;
+  }[];
 }
 
 export type ActiveTab = 'beranda' | 'profil' | 'seksilembaga' | 'layanan' | 'berita' | 'pengumuman' | 'galeri' | 'kontak';
