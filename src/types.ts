@@ -38,7 +38,7 @@ export interface Announcement {
   time?: string;
   location?: string;
   description: string;
-  category: 'Kegiatan' | 'Informasi' | 'Keamanan' | 'Keuangan' | 'Umum';
+  category: 'Kegiatan' | 'Informasi' | 'Keamanan' | 'Keuangan' | 'Umum' | 'Lingkungan';
 }
 
 export interface GalleryItem {

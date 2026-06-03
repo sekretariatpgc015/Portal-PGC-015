@@ -32,7 +32,6 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
     { id: 'layanan', label: 'Layanan' },
     { id: 'berita', label: 'Berita & Pengumuman' },
     { id: 'galeri', label: 'Galeri' },
-    { id: 'kontak', label: 'Kontak' },
   ];
 
   const handleNavClick = (tabId: ActiveTab) => {
@@ -155,7 +154,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
               className="group flex items-center space-x-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer active:scale-95"
             >
               <LogIn className="h-4 w-4 transition-transform group-hover:translate-x-0.5 duration-200" />
-              <span>Login Mandiri</span>
+              <span>Login</span>
             </button>
           </div>
 
@@ -231,7 +230,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                   className="w-full flex items-center justify-center space-x-2 px-5 py-3.5 bg-blue-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-md active:scale-95 transition-all"
                 >
                   <LogIn className="h-4 w-4" />
-                  <span>Login Mandiri</span>
+                  <span>Login</span>
                 </motion.button>
               </div>
             </div>

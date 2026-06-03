@@ -51,7 +51,7 @@ function GalleryCard({ item, onView }: GalleryCardProps) {
 
       {/* Float category tag */}
       <div className="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-        <span className="text-sm font-black uppercase text-white bg-blue-600 px-2.5 py-1 rounded-md tracking-wider">
+        <span className="text-[10px] leading-[14px] font-black uppercase text-white bg-blue-600 px-2.5 py-1 rounded-md tracking-wider">
           {item.category}
         </span>
       </div>

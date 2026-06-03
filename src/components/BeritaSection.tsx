@@ -36,7 +36,7 @@ export default function BeritaSection({ initialSubTab = 'berita' }: BeritaSectio
   const [selectedAnnCategory, setSelectedAnnCategory] = useState<string>('Semua');
   const [expandedAnnId, setExpandedAnnId] = useState<string | null>(null);
 
-  const annCategories = ['Semua', 'Kegiatan', 'Informasi', 'Keamanan', 'Keuangan', 'Lainnya'];
+  const annCategories = ['Semua', 'Kegiatan', 'Informasi', 'Keamanan', 'Keuangan', 'Lingkungan', 'Lainnya'];
 
   const getCategoryColor = (cat: string) => {
     switch (cat) {
@@ -46,6 +46,8 @@ export default function BeritaSection({ initialSubTab = 'berita' }: BeritaSectio
         return 'bg-amber-50 text-amber-700 border-amber-100';
       case 'Kegiatan':
         return 'bg-blue-50 text-blue-700 border-blue-100';
+      case 'Lingkungan':
+        return 'bg-emerald-50 text-emerald-700 border-emerald-100';
       default:
         return 'bg-slate-50 text-slate-700 border-slate-100';
     }
